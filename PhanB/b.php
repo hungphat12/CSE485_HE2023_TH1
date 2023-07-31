@@ -82,21 +82,12 @@ class BookList {
         });
     }
 }
-// Tạo một đối tượng BookList
 $bookList = new BookList();
-
-// Thêm các đối tượng Book vào danh sách
 $bookList->addBook(new Book("The Great Gatsby", "F. Scott Fitzgerald", "Scribner", 1925, "978-3-16-148410-0", ["Chapter 1", "Chapter 2", "Chapter 3"]));
 $bookList->addBook(new Book("To Kill a Mockingbird", "Harper Lee", "J. B. Lippincott & Co.", 1960, "978-3-16-148410-1", ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"]));
 $bookList->addBook(new Book("1984", "George Orwell", "Secker & Warburg", 1949, "978-3-16-148410-2", ["Part 1", "Part 2", "Part 3", "Part 4"]));
-
-// Kiểm tra danh sách các đối tượng Book
 $books = $bookList->getBooks();
-
-// Sắp xếp danh sách theo tên tác giả
 $bookList->sortByAuthor();
-
-// Hiển thị danh sách các đối tượng Book
 echo "<h1>Book List</h1>";
 echo "<table>";
 echo "<tr><th>Name</th><th>Author</th><th>Publisher</th><th>Year</th><th>ISBN</th><th>Chapters</th></tr>";
