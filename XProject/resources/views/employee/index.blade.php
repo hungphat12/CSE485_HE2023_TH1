@@ -37,10 +37,10 @@
         background-color: red;
         color: white;
     }
-    a{
+    /* a{
         text-decoration: none;
         padding: 2.5px;
-    }
+    } */
     .add-employee{
         text-align: center;
         font-size: 20px;
@@ -84,10 +84,10 @@
                                 @csrf
                                 @method('DELETE')
                                 <a href="{{ route('employees.show',$row->id ) }}" class="btn btn-primary btn-sm" 
-                                style="background-color: blue;color:white; ">View</a>
+                                style="background-color: blue;color:white; "><i class="bi bi-eye"></i></a>
                                 <a href="{{ route('employees.edit',$row->id ) }}" class="btn btn-warning btn-sm"
-                                style="background-color: green ;color:black;">Edit</a>
-                                <input type="submit" class="btn btn-danger btn-sm" value="Delete" >
+                                style="background-color: green ;color:black;"><i class="bi bi-pencil"></i></a>
+                                <i class="bi bi-trash3" value="Delete" ></i> 
                             </form>
                         </td>
                     </tr>
